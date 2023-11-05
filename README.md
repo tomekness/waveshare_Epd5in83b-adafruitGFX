@@ -1,13 +1,10 @@
 # waveshare_Epd5in83b-adafruitGFX
 
-/////////// WaveShare Epaper Display + ESP8266 +  adafruit GFX ////////////////////////////////////////////
-//                                                                                                       //
-// drawing on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX     //
-//                                                                                                       //
-// based on the esp8266-waveshare-epd drwawing example and the adafruit GFX canvas example               //
-//                                                                                                       //
-//////////////////////////////////////////////////////////////////////////// tomek n. | 2023 //////////////
+# WaveShare Epaper Display + ESP8266 +  adafruit GFX 
 
+## A Simple Arduino example on how to draw on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX     //
+
+// based on the esp8266-waveshare-epd drwawing example and the adafruit GFX canvas example 
 
 /* to make a long story short: i just wanted to use the adafruit GFX drawing features on a Waveshare ePaper 
 dispaly controlled by an ESP8266. I ended up using the canvas feature (first draw on to a virtual canvas and then
