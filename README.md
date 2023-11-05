@@ -1,5 +1,3 @@
-# waveshare_Epd5in83b-adafruitGFX
-
 # WaveShare Epaper Display + ESP8266 +  adafruit GFX 
 
 ## A Simple Arduino example on how to draw on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX     //
@@ -31,4 +29,5 @@ high voltage state for a long time, which will damage the e-Paper and cannot be 
 that is, one is black and white, and the other one is red and white. 
 As there is a register controlling the black and white color when transmitting, 
 then another one controls the red and white color. One byte controls 8 pixels in these two registers.*/
+
 
