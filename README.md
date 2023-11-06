@@ -11,6 +11,9 @@ directly into the display, therefor i had to make two private function from the 
 in my arduino sketch, but i didn't want to mess with the lib, so i copy&pasted »EPD_5IN83B_V2_SendCommand« and 
 »EPD_5IN83B_V2_SendData« directly into the sktech : / (little ugly. but works)
 
+adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
+waveshare ---> https://www.waveshare.com/wiki/E-Paper_ESP8266_Driver_Board
+
 
 ////////////////////////////// be adviced
 
