@@ -2,16 +2,16 @@
 
 ## A Simple Arduino example on how to draw on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX    
 
-// based on the esp8266-waveshare-epd drwawing example and the adafruit GFX canvas example 
+//Based on the esp8266-waveshare-epd drawing example and the adafruit GFX canvas example 
 
-to make a long story short: i just wanted to use the adafruit GFX drawing features on a Waveshare ePaper dispaly controlled by an ESP8266. I ended up using the canvas feature (first draw on to a virtual canvas and then send the finished drawing to the display). On the way i run into a lof of storrage issues ... so i have to write directly into the display, therefor i had to make two private function from the esp8266_waveshre lib public avaiable in my arduino sketch, but i didn't want to mess with the lib, so i copy&pasted »EPD_5IN83B_V2_SendCommand« and »EPD_5IN83B_V2_SendData« directly into the sktech : / (little ugly. but works)
+to make a long story short: I just wanted to use the adafruit GFX drawing features on a Waveshare ePaper display controlled by an ESP8266. I ended up using the canvas feature (first draw onto a virtual canvas and then send the finished drawing to the display). On the way I ran into a lot of storage issues ... so I had to write directly into the display, therefor I had to make two private functions from the esp8266_waveshare lib public available in my Arduino sketch, but I didn't want to mess with the lib, so I copy&pasted »EPD_5IN83B_V2_SendCommand« and »EPD_5IN83B_V2_SendData« directly into the sketch : / (little ugly. but works)
 
 adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
 <br>
 waveshare ---> https://www.waveshare.com/wiki/E-Paper_ESP8266_Driver_Board
 
 
-////////////////////////////// be adviced
+////////////////////////////// be advised
 
 *For E-paper displays that support partial refresh, please note that you cannot refresh them with the 
 partial refresh mode all the time. After refreshing partially several times, you need to fully refresh EPD once. 
