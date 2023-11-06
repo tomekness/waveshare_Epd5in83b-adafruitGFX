@@ -1,10 +1,10 @@
 # WaveShare Epaper Display + ESP8266 +  adafruit GFX 
 
-## A Simple Arduino example on how to draw on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX     //
+## A Simple Arduino example on how to draw on a WaveShare 5.83inch 648x480 (Epd5in83b V2) E-Paper with an ESP8266 using adafruit GFX    
 
 // based on the esp8266-waveshare-epd drwawing example and the adafruit GFX canvas example 
 
-/* to make a long story short: i just wanted to use the adafruit GFX drawing features on a Waveshare ePaper 
+to make a long story short: i just wanted to use the adafruit GFX drawing features on a Waveshare ePaper 
 dispaly controlled by an ESP8266. I ended up using the canvas feature (first draw on to a virtual canvas and then
 send the finished drawing to the display). On the way i run into a lof of storrage issues … so i have to write  
 directly into the display, therefor i had to make two private function from the esp8266_waveshre lib public avaiable 
@@ -12,25 +12,28 @@ in my arduino sketch, but i didn't want to mess with the lib, so i copy&pasted �
 »EPD_5IN83B_V2_SendData« directly into the sktech : / (little ugly. but works)
 
 adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
+<br>
 waveshare ---> https://www.waveshare.com/wiki/E-Paper_ESP8266_Driver_Board
 
 
 ////////////////////////////// be adviced
 
-/* For E-paper displays that support partial refresh, please note that you cannot refresh them with the 
+*For E-paper displays that support partial refresh, please note that you cannot refresh them with the 
 partial refresh mode all the time. After refreshing partially several times, you need to fully refresh EPD once. 
-Otherwise, the display effect will be abnormal, which cannot be repaired! */
+Otherwise, the display effect will be abnormal, which cannot be repaired!*
 
-/* Note that the screen cannot be powered on for a long time. When the screen is not refreshed, 
+*Note that the screen cannot be powered on for a long time. When the screen is not refreshed, 
 please set the screen to sleep mode or power off it. Otherwise, the screen will remain in a 
-high voltage state for a long time, which will damage the e-Paper and cannot be repaired! */
+high voltage state for a long time, which will damage the e-Paper and cannot be repaired!*
 
+[5.83inch e-Paper HAT (B) Manual](https://www.waveshare.com/wiki/5.83inch_e-Paper_HAT_(B)_Manual)
 
 ////////////////////////////// how does the ePaper work
 
-/* For 5.83inch e-Paper (B), a red-black-white e-paper, we need to divide one picture into two pictures, 
+*For 5.83inch e-Paper (B), a red-black-white e-paper, we need to divide one picture into two pictures, 
 that is, one is black and white, and the other one is red and white. 
 As there is a register controlling the black and white color when transmitting, 
-then another one controls the red and white color. One byte controls 8 pixels in these two registers.*/
+then another one controls the red and white color. One byte controls 8 pixels in these two registers.*
 
+[5.83inch e-Paper HAT (B) Manual](https://www.waveshare.com/wiki/5.83inch_e-Paper_HAT_(B)_Manual)
 
