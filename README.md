@@ -5,7 +5,7 @@
 
 //Based on the esp8266-waveshare-epd drawing example and the adafruit GFX canvas example 
 
-to make a long story short: I just wanted to use the adafruit GFX drawing features on a Waveshare ePaper display controlled by an ESP8266. I ended up using the canvas feature (first draw onto a virtual canvas and then send the finished drawing to the display). On the way I ran into a lot of storage issues ... so I had to write directly into the display, therefor I had to make two private functions from the esp8266_waveshare lib public available in my Arduino sketch, but I didn't want to mess with the lib, so I copy&pasted »EPD_5IN83B_V2_SendCommand« and »EPD_5IN83B_V2_SendData« directly into the sketch : / (little ugly. but works)
+to make a long story short: I just wanted to use the adafruit GFX drawing features on a Waveshare ePaper display controlled by an ESP8266 (Node MCU). I ended up using the canvas feature (first draw onto a virtual canvas and then send the finished drawing to the display). On the way I ran into a lot of storage issues ... so I had to write directly into the display, therefor I had to make two private functions from the esp8266_waveshare lib public available in my Arduino sketch, but I didn't want to mess with the lib, so I copy&pasted »EPD_5IN83B_V2_SendCommand« and »EPD_5IN83B_V2_SendData« directly into the sketch : / (little ugly. but works)
 
 adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
 <br>
