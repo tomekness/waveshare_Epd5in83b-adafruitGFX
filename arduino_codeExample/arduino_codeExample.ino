@@ -38,10 +38,11 @@ then another one controls the red and white color. One byte controls 8 pixels in
 
 /* Includes ------------------------------------------------------------------*/
 
-#include "DEV_Config.h"
-#include "EPD.h"
-#include <Adafruit_GFX.h>
-#include <gfxfont.h>
+#include "DEV_Config.h"   // esp8266-waveshare-epd Library --> https://www.waveshare.com/wiki/E-Paper_ESP8266_Driver_Board#Demo_Code
+#include "EPD.h"    // esp8266-waveshare-epd Library --> https://www.waveshare.com/wiki/E-Paper_ESP8266_Driver_Board#Demo_Code
+#include <Adafruit_GFX.h>   // adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
+#include <gfxfont.h>         // adafruit GFX Library ---> https://github.com/adafruit/Adafruit-GFX-Library
+
 
 boolean display_debug = true;
 
