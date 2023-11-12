@@ -146,7 +146,11 @@ void sendImageToDisplay(boolean _layer, GFXcanvas1 *_canvas) {
   // canvas ------------------> 1bit - 648 x 480
   // ePaper Image ------------> 8bit - 81 x 480 (1 byte = 8 bit)
 
-  if (display_debug) Serial.print("--> send black data");
+  if (_layer == 0) {
+    if (display_debug) Serial.print("--> send black data");
+  } else {
+    if (display_debug) Serial.print("--> send red data");
+  }
 
   //which layer should we write to
   if (_layer == 0) {  // black layer
